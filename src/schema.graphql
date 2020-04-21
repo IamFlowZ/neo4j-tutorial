@@ -1,0 +1,11 @@
+type Person {
+  name: ID!
+  friends: [Person] @relation(name: "FRIEND_OF", direction: "OUT")
+  drives: [Car] @relation(name: "DRIVES", direction: "OUT")
+}
+
+type Car {
+  name: ID!
+  color: String
+  drivenBy: [Person] @relation(name: "DRIVEN_BY", direction: "OUT")
+}

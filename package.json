@@ -1,0 +1,22 @@
+{
+  "name": "neo4j-driver-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js,graphql src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.12.0",
+    "express": "^4.17.1",
+    "neo4j-driver": "^4.0.2",
+    "neo4j-graphql-js": "^2.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
